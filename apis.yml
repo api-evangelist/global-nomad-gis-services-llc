@@ -1,23 +1,62 @@
 aid: global-nomad-gis-services-llc
+
 name: Global Nomad GIS Services, LLC
-description: 'Global Nomad GIS Services, LLC is a company surfaced via the API Evangelist harvest backlog
-  (source: vc-portfolio) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.gn-gis.com/uploads/8/1/2/8/81285772/editor/stock-world-globe-vector-1000.jpg?1611710403
+
+description: 'Global Nomad GIS Services, LLC is a consulting firm specializing in Geographic Information Systems (GIS) based in Walnut Creek, California. They provide quality-driven, comprehensive, and technically oriented GIS consulting services, including data analysis, mapping solutions, and custom GIS application development for organizations seeking to leverage spatial data.'
+
 url: https://raw.githubusercontent.com/api-evangelist/global-nomad-gis-services-llc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- GIS
+- Consulting
+- Spatial Data
+- Walnut Creek
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/global-nomad-gis-services-llc-hosts.yml
+- type: Vendors
+  url: vendors/global-nomad-gis-services-llc-vendors.yml
+- type: DomainSecurity
+  url: security/global-nomad-gis-services-llc-domain-security.yml
 - type: Website
   url: https://www.gn-gis.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's website serves HTML with JavaScript rendering and no machine‑readable API spec was found.
+  evidence:
+    - url: https://www.gn-gis.com
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
